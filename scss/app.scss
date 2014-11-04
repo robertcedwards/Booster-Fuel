@@ -23,7 +23,24 @@
 	p{}
 	button{}
 }
-#golsod{
+#offerings{
+	@include grid-row();
+ 	
+	#intelligentsia{
+		span{
+			@include grid-column(4);
+
+			img{}
+			span.name{}
+			span.price{}
+			a{
+			@include button
+ 			}
+		}
+
+	}
+}
+#good{
 	h3{}
 	p{}
 	ul{
