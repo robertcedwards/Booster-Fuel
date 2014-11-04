@@ -28,13 +28,25 @@
  	
 	#intelligentsia{
 		span{
-			@include grid-column(4);
-
+			@include grid-column(3);
+			text-align:center;
+			padding: 1em;
 			img{}
-			span.name{}
-			span.price{}
+			.name{
+				border:0;
+				width:100%;
+				color:grey;
+				font-weight:bold;
+			}
+			.price{
+				border:0;
+				width:100%;
+				color:grey;
+				font-weight:bold;
+				}
 			a{
-			@include button
+				width:66%;
+				@include button
  			}
 		}
 
