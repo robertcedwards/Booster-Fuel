@@ -1,31 +1,92 @@
 @import "settings";
 @import "foundation";
-
-#header{
-	
-	h1{
-		a{
-			img{}
-		}
-	}
-	h2{
-
-	}
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+::-webkit-scrollbar { 
+    display: none; 
+}
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
 }
 
-#overview{
-	h3{}
-	p{}
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+p {
+	font-family: 'Lato',sans-serif;
+	font-weight: 100;
+}
+#home{
+	background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	header{
+		h1{
+			a{
+				img{}
+			}
+		}
+		h2{
+			color: white;
+		}
+		nav{
+			position: absolute;
+			top: 0;
+			right: 100px;
+			margin-top: 20px;
+			ul{
+				@include inline-list;
+				li{
+					a{
+						font-weight: 100;
+						letter-spacing: .4px;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	div{
+		@include grid-row();
+		h3{
+			color: white;
+		}
+		p{
+			color: white;
+		}
+	}
+	div{
+		a{
+			p {}
+		}
+	}
 }
 
 #fuel{
-	h3{}
-	p{}
-	button{}
-}
-#offerings{
 	@include grid-row();
- 	
+	h3{}
+	span{
+		@include grid-column(4);
+		img{}
+		p{}
+	}
+}
+
+#coffee{ 
+	@include grid-row();	
 	#intelligentsia{
 		span{
 			@include grid-column(3);
@@ -35,7 +96,7 @@
 			.name{
 				border:0;
 				width:100%;
-				color:purple;
+				color:grey;
 				font-weight:bold;
 			}
 			.price{
@@ -48,11 +109,83 @@
 				width:66%;
 				@include button
  			}
+ 			a{
+				width:66%;
+				@include button
+ 			}
 		}
-
 	}
 }
+
+#kits {
+	@include grid-row();
+
+	#kit-type{
+		span{
+			@include grid-column(3);
+			text-align:center;
+			padding: 1em;
+			img{}
+			.name{
+				border:0;
+				width:100%;
+				color:grey;
+				font-weight:bold;
+			}
+			.price{
+				border:0;
+				width:100%;
+				color:grey;
+				font-weight:bold;
+				}
+			a{
+				width:66%;
+				@include button
+ 			}
+ 			a{
+				width:66%;
+				@include button
+ 			}
+		}
+	}
+}
+
+#instructions {
+	@include grid-row();
+
+	#videos{
+		span{
+			@include grid-column(3);
+			text-align:center;
+			padding: 1em;
+			img{}
+			.name{
+				border:0;
+				width:100%;
+				color:grey;
+				font-weight:bold;
+			}
+			.price{
+				border:0;
+				width:100%;
+				color:grey;
+				font-weight:bold;
+				}
+			a{
+				width:66%;
+				@include button
+ 			}
+ 			a{
+				width:66%;
+				@include button
+ 			}
+		}
+	}
+}
+
 #good{
+	@include grid-row();
+
 	h3{}
 	p{}
 	ul{
@@ -61,10 +194,30 @@
 	}
 	button{}
 }
+
 #tools{
+	@include grid-row();
 	h3{}
 	p{
 		a{}
 	}
-
 }
+
+footer{
+	background-color: #222;
+	width: 100%;
+	#footer{
+		@include grid-row();
+		ul{
+			margin-left: 0;
+			@include grid-column(6);
+			li{
+				color: white;
+				list-style: none;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
