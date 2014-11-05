@@ -170,19 +170,15 @@ p {
 
 #instructions {
 	@include grid-row();
-
-	#videos{
-		span{
-			@include grid-column(4);
-			text-align:center;
-			padding: 1em;
-			img{}
-			.name{
-				border:0;
-				width:100%;
-				color:grey;
-				font-weight:bold;
-			}
+	span{
+		@include grid-column(4);
+		video.how-to{
+		}
+		.name{
+			border:0;
+			width:100%;
+			color:grey;
+			font-weight:bold;
 		}
 	}
 }
