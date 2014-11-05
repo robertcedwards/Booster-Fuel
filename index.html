@@ -10,6 +10,12 @@
 <body>
     <section id="home">
         <header>
+        <!-- Background Video -->
+        <video autoplay="on" loop="on" muted>
+            <source src="img/backgrounds/homeBG.mp4" type="video/mp4">
+            <source src="img/backgrounds/homeBG.mp4" type="video/webm">
+            <img src="" title="Your browser does not support the <video> tag">
+        </video>
             <h1 class="logo">
                 <a href="#">
                     <img title="Booster Fuel"src="img/logo.png"/>
@@ -22,15 +28,18 @@
                     <li><a href="#offerings">THE FUEL</a></li>
                     <li><a href="#kits">OFFERINGS</a></li>
                     <li><a href="#instructions">KITS</a></li>
-                    <li><a href="good">INSTRUCTIONS</a></li>
-                    <li><a href="tools">TOOLS</a></li>
+                    <li><a href="#good">INSTRUCTIONS</a></li>
+                    <li><a href="#tools">TOOLS</a></li>
                 </ul>
             </nav>
         </header>
-        <div>
-            <h3>Overview</h3>
-            <p>Drink good coffee, do good deeds. It’s that simple. With Booster Fuel, every cup of Intelligentsia coffee, bag of gourmet whole beans and glass of cold brew and cola helps fund Team One’s Do-Good Friday charities.</p>
-        </div>
+
+        <figure>
+            <figcaption>
+                <h3>Overview</h3>
+                <p>Drink good coffee, do good deeds. It’s that simple. With Booster Fuel, every cup of Intelligentsia coffee, bag of gourmet whole beans and glass of cold brew and cola helps fund Team One’s Do-Good Friday charities.</p>
+            </figcaption>
+        </figure>
 
         <div class="scroll">
             <a href="#fuel">
@@ -40,19 +49,21 @@
     </section>
 
     <section id="fuel">
-        <h3>The Fuel</h3>
-        <span>
-            <img src="http://www.intelligentsiacoffee.com/sites/default/files/imagecache/grid_4_imagecache/coffee-product-images/eldiablo.jpg"/>
-            <p>Kissing up to clients? A coffee service with fresh-ground, fresh-brewed Intelligentsia coffee and a selection of gourmet tea can be ready for your next morning meeting. Celebrating the meeting’s success? Both kitchens are equipped with premium brewing equipment to offer the same throughout the day. Either way, every cup gives a little more to charity. </p>
-        </span>
-        <span>
-        <img src="http://www.intelligentsiacoffee.com/sites/default/files/imagecache/grid_4_imagecache/coffee-product-images/eldiablo.jpg"/>
-            <p>Kissing up to a spouse or roommate? With every bag of gourmet roast ordered and delivered to your desk, you’ll not only pay 33% less than at Intelligentsia, you’ll enjoy an added shot of good karma with $5 going back to the community.</p>
-        </span>
-        <span>
-            <img src="http://www.intelligentsiacoffee.com/sites/default/files/imagecache/grid_4_imagecache/coffee-product-images/eldiablo.jpg"/>
-            <p>Kissing up to the entire agency? Booster Fuel is also available for Team One events, with pour-over service in the mornings and cold brew and cola in the afternoon.</p>
-        </span>
+        <div id="fuel-wrapper">
+            <h3>The Fuel</h3>
+            <span>
+                <img src="img/coffee/coffee1.jpg"/>
+                <p>Kissing up to clients? A coffee service with fresh-ground, fresh-brewed Intelligentsia coffee and a selection of gourmet tea can be ready for your next morning meeting. Celebrating the meeting’s success? Both kitchens are equipped with premium brewing equipment to offer the same throughout the day. Either way, every cup gives a little more to charity. </p>
+            </span>
+            <span>
+            <img src="img/coffee/coffee2.jpg"/>
+                <p>Kissing up to a spouse or roommate? With every bag of gourmet roast ordered and delivered to your desk, you’ll not only pay 33% less than at Intelligentsia, you’ll enjoy an added shot of good karma with $5 going back to the community.</p>
+            </span>
+            <span>
+                <img src="img/coffee/coffee3.jpg"/>
+                <p>Kissing up to the entire agency? Booster Fuel is also available for Team One events, with pour-over service in the mornings and cold brew and cola in the afternoon.</p>
+            </span>
+        </div>
     </section>
 
     <section id="coffee">
@@ -123,28 +134,19 @@
     <h3>INSTRUCTIONS</h3>
         <div id="videos">   
             <span>
-                <img src="http://www.intelligentsiacoffee.com/sites/default/files/imagecache/grid_4_imagecache/coffee-product-images/eldiablo.jpg"/>
+                     <div id="player"></div>
+
                 <span class="name">El Diablo Dark Roast</span>
-                <span class="price">$15.00</span>       
-                <a>Add to Cart</a>
             </span>
             <span>
-                <img src="http://www.intelligentsiacoffee.com/sites/default/files/imagecache/grid_4_imagecache/coffee-product-images/org_bcat_0.jpg"/>      
+                    <div id="player"></div>
+    
                 <span class="name">El Diablo Dark Roast</span>
-                <span class="price">$15.00</span>               
-                <a>Add to Cart</a>
             </span>
             <span>              
-                <img src="http://www.intelligentsiacoffee.com/sites/default/files/imagecache/grid_4_imagecache/coffee-product-images/elgallo.jpg"/>
+                    <div id="player"></div>
+
                 <span class="name">El Diablo Dark Roast</span>
-                <span class="price">$15.00</span>                       
-                <a>Add to Cart</a>
-            </span>
-            <span>              
-                <img src="http://www.intelligentsiacoffee.com/sites/default/files/imagecache/grid_4_imagecache/coffee-product-images/elgallo.jpg"/>
-                <span class="name">El Diablo Dark Roast</span>
-                <span class="price">$15.00</span>                       
-                <a>Add to Cart</a>
             </span>
         </div>
     </section>
@@ -203,10 +205,21 @@
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
 
+        <script src="http://luwes.co/vimeowrap.js/vimeowrap.js"></script>
+        <script>
+            vimeowrap('player').setup({        
+                urls: [
+                    'https://vimeo.com/40980282',
+                    'https://vimeo.com/40980282',
+                    'https://vimeo.com/40980282'
+                ],
+                repeat: 'list'            
+            });
+        </script>
 
      <script>
             $(function() {
-              $('.scroll a').click(function() {
+              $('.scroll a, nav ul li a').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                   var target = $(this.hash);
                   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

@@ -5624,40 +5624,50 @@ p {
         font-weight: 100;
         letter-spacing: 0.4px;
         color: white; }
-  #home div {
+  #home figure {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
     max-width: 62.5rem; }
-    #home div:before, #home div:after {
+    #home figure:before, #home figure:after {
       content: " ";
       display: table; }
-    #home div:after {
+    #home figure:after {
       clear: both; }
-    #home div h3 {
-      color: white; }
-    #home div p {
-      color: white; }
+    #home figure figcaption {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 83.33333%;
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; }
+      #home figure figcaption h3 {
+        color: white; }
+      #home figure figcaption p {
+        color: white; }
 
-#fuel #fuel-wrapper {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem; }
-  #fuel #fuel-wrapper:before, #fuel #fuel-wrapper:after {
-    content: " ";
-    display: table; }
-  #fuel #fuel-wrapper:after {
-    clear: both; }
-  #fuel #fuel-wrapper span {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 33.33333%;
-    float: left; }
+#fuel {
+  background: white; }
+  #fuel #fuel-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem; }
+    #fuel #fuel-wrapper:before, #fuel #fuel-wrapper:after {
+      content: " ";
+      display: table; }
+    #fuel #fuel-wrapper:after {
+      clear: both; }
+    #fuel #fuel-wrapper span {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 33.33333%;
+      float: left; }
 
 #coffee {
   width: 100%;
@@ -5846,7 +5856,7 @@ p {
   #instructions #videos span {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 25%;
+    width: 33.33333%;
     float: left;
     text-align: center;
     padding: 1em; }
@@ -5855,67 +5865,6 @@ p {
       width: 100%;
       color: grey;
       font-weight: bold; }
-    #instructions #videos span .price {
-      border: 0;
-      width: 100%;
-      color: grey;
-      font-weight: bold; }
-    #instructions #videos span a {
-      width: 66%;
-      border-style: solid;
-      border-width: 0px;
-      cursor: pointer;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-weight: normal;
-      line-height: normal;
-      margin: 0 0 1.25rem;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
-      display: inline-block;
-      padding-top: 1rem;
-      padding-right: 2rem;
-      padding-bottom: 1.0625rem;
-      padding-left: 2rem;
-      font-size: 1rem;
-      background-color: #008cba;
-      border-color: #007295;
-      color: white;
-      transition: background-color 300ms ease-out; }
-      #instructions #videos span a:hover, #instructions #videos span a:focus {
-        background-color: #007295; }
-      #instructions #videos span a:hover, #instructions #videos span a:focus {
-        color: white; }
-    #instructions #videos span a {
-      width: 66%;
-      border-style: solid;
-      border-width: 0px;
-      cursor: pointer;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-weight: normal;
-      line-height: normal;
-      margin: 0 0 1.25rem;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
-      display: inline-block;
-      padding-top: 1rem;
-      padding-right: 2rem;
-      padding-bottom: 1.0625rem;
-      padding-left: 2rem;
-      font-size: 1rem;
-      background-color: #008cba;
-      border-color: #007295;
-      color: white;
-      transition: background-color 300ms ease-out; }
-      #instructions #videos span a:hover, #instructions #videos span a:focus {
-        background-color: #007295; }
-      #instructions #videos span a:hover, #instructions #videos span a:focus {
-        color: white; }
 
 #good {
   width: 100%;

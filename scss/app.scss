@@ -28,11 +28,22 @@ p {
 	font-weight: 100;
 }
 #home{
-	background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
+	/*background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
-  	background-size: cover;
+  	background-size: cover;*/
+  	video {
+	    position: absolute; 
+	    right: 0; 
+	    bottom: 0;
+	    min-width: 100%; 
+	    min-height: 100%;
+	    width: auto; 
+	    height: 100%; 
+	    z-index: -100;
+	    background-size: cover;
+}
 	header{
 		h1{
 			a{
@@ -59,13 +70,18 @@ p {
 			}
 		}
 	}
-	div{
+	figure{
 		@include grid-row();
-		h3{
-			color: white;
-		}
-		p{
-			color: white;
+		figcaption{
+			@include grid-column(
+		    $columns:10,
+		    $center:true);
+				h3{
+					color: white;
+				}
+				p{
+					color: white;
+				}
 		}
 	}
 	div{
@@ -76,12 +92,14 @@ p {
 }
 
 #fuel{
-	@include grid-row();
-	h3{}
-	span{
-		@include grid-column(4);
-		img{}
-		p{}
+	background: white;
+	#fuel-wrapper{
+		@include grid-row();
+		h3{}
+		span{
+			@include grid-column(4);
+			img{}
+		}	p{}
 	}
 }
 
@@ -155,7 +173,7 @@ p {
 
 	#videos{
 		span{
-			@include grid-column(3);
+			@include grid-column(4);
 			text-align:center;
 			padding: 1em;
 			img{}
@@ -165,20 +183,6 @@ p {
 				color:grey;
 				font-weight:bold;
 			}
-			.price{
-				border:0;
-				width:100%;
-				color:grey;
-				font-weight:bold;
-				}
-			a{
-				width:66%;
-				@include button
- 			}
- 			a{
-				width:66%;
-				@include button
- 			}
 		}
 	}
 }
