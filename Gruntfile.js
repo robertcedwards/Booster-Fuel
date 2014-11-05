@@ -11,9 +11,17 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'css/app.css': 'scss/app.scss',
         }        
-      }
+      },
+      build: {
+        options: {
+          outputStyle: 'nested'
+        },
+        files: {
+          'css/app.css.full': 'scss/app.scss',
+        }        
+      }      
     },
 
     watch: {
@@ -26,6 +34,7 @@ module.exports = function(grunt) {
     }
   });
 
+grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
