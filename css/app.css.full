@@ -5601,7 +5601,8 @@ h3, h4, h5, h6 {
     background-size: cover;
     overflow: hidden; }
   #home header h2 {
-    color: white; }
+    color: white;
+    margin-left: 0.1em; }
   #home header nav {
     position: absolute;
     top: 0;
