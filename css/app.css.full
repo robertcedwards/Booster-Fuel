@@ -5588,165 +5588,154 @@ h3, h4, h5, h6 {
     font-family: 'entypo', sans-serif;
     font-size: large; }
 
-#home header h2 {
-  color: white; }
-#home header nav {
-  position: absolute;
-  top: 0;
-  right: 100px;
-  margin-top: 20px; }
-  #home header nav ul {
-    margin: 0 auto 1.0625rem auto;
-    margin-left: -1.375rem;
-    margin-right: 0;
-    padding: 0;
-    list-style: none;
+#home {
+  /*background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/ }
+  #home video {
+    position: absolute;
+    min-width: 100%;
+    z-index: -100;
+    background-size: cover;
     overflow: hidden; }
-    #home header nav ul > li {
+  #home header h2 {
+    color: white; }
+  #home header nav {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    margin-top: 20px; }
+    #home header nav ul {
+      margin: 0 auto 1.0625rem auto;
+      margin-left: -1.375rem;
+      margin-right: 0;
+      padding: 0;
       list-style: none;
-      float: left;
-      margin-left: 1.375rem;
-      display: block; }
-      #home header nav ul > li > * {
+      overflow: hidden; }
+      #home header nav ul > li {
+        list-style: none;
+        float: left;
+        margin-left: 1.375rem;
         display: block; }
-    #home header nav ul li a {
-      font-weight: 100;
-      letter-spacing: 0.4px;
-      color: white; }
-#home figure {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem; }
-  #home figure:before, #home figure:after {
-    content: " ";
-    display: table; }
-  #home figure:after {
-    clear: both; }
-  #home figure figcaption {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 83.33333%;
-    float: left;
+        #home header nav ul > li > * {
+          display: block; }
+      #home header nav ul li a {
+        font-weight: 100;
+        letter-spacing: 0.4px;
+        color: white; }
+  #home figure {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    float: none; }
-    #home figure figcaption h3 {
-      color: white; }
-    #home figure figcaption p {
-      color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem; }
+    #home figure:before, #home figure:after {
+      content: " ";
+      display: table; }
+    #home figure:after {
+      clear: both; }
+    #home figure figcaption {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 83.33333%;
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; }
+      #home figure figcaption h3 {
+        color: white; }
+      #home figure figcaption p {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 100; }
+
+#fuel {
+  background-color: white; }
+  #fuel .fuel-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem; }
+    #fuel .fuel-wrapper:before, #fuel .fuel-wrapper:after {
+      content: " ";
+      display: table; }
+    #fuel .fuel-wrapper:after {
+      clear: both; }
+    #fuel .fuel-wrapper span {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 33.33333%;
+      float: left; }
+    #fuel .fuel-wrapper p {
       font-family: 'Lato', sans-serif;
       font-weight: 100; }
 
-#fuel {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem;
-  background-color: white; }
-  #fuel:before, #fuel:after {
-    content: " ";
-    display: table; }
-  #fuel:after {
-    clear: both; }
-  #fuel span {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 33.33333%;
-    float: left; }
-  #fuel p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 100; }
-
 #coffee {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem; }
-  #coffee:before, #coffee:after {
-    content: " ";
-    display: table; }
-  #coffee:after {
-    clear: both; }
-  #coffee #intelligentsia span {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 25%;
-    float: left;
-    text-align: center;
-    padding: 1em; }
-    #coffee #intelligentsia span .name {
-      border: 0;
-      width: 100%;
-      color: grey;
-      font-weight: bold; }
-    #coffee #intelligentsia span .price {
-      border: 0;
-      width: 100%;
-      color: grey;
-      font-weight: bold; }
-    #coffee #intelligentsia span a {
-      width: 66%;
-      border-style: solid;
-      border-width: 0px;
-      cursor: pointer;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-weight: normal;
-      line-height: normal;
-      margin: 0 0 1.25rem;
-      position: relative;
-      text-decoration: none;
+  background-color: black; }
+  #coffee .coffee-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem; }
+    #coffee .coffee-wrapper:before, #coffee .coffee-wrapper:after {
+      content: " ";
+      display: table; }
+    #coffee .coffee-wrapper:after {
+      clear: both; }
+    #coffee .coffee-wrapper h3 {
+      color: white; }
+    #coffee .coffee-wrapper #intelligentsia span {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 25%;
+      float: left;
       text-align: center;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
-      display: inline-block;
-      padding-top: 1rem;
-      padding-right: 2rem;
-      padding-bottom: 1.0625rem;
-      padding-left: 2rem;
-      font-size: 1rem;
-      background-color: #008cba;
-      border-color: #007295;
-      color: white;
-      transition: background-color 300ms ease-out; }
-      #coffee #intelligentsia span a:hover, #coffee #intelligentsia span a:focus {
-        background-color: #007295; }
-      #coffee #intelligentsia span a:hover, #coffee #intelligentsia span a:focus {
-        color: white; }
-    #coffee #intelligentsia span a {
-      width: 66%;
-      border-style: solid;
-      border-width: 0px;
-      cursor: pointer;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-weight: normal;
-      line-height: normal;
-      margin: 0 0 1.25rem;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
-      display: inline-block;
-      padding-top: 1rem;
-      padding-right: 2rem;
-      padding-bottom: 1.0625rem;
-      padding-left: 2rem;
-      font-size: 1rem;
-      background-color: #008cba;
-      border-color: #007295;
-      color: white;
-      transition: background-color 300ms ease-out; }
-      #coffee #intelligentsia span a:hover, #coffee #intelligentsia span a:focus {
-        background-color: #007295; }
-      #coffee #intelligentsia span a:hover, #coffee #intelligentsia span a:focus {
-        color: white; }
+      padding: 1em; }
+      #coffee .coffee-wrapper #intelligentsia span .name {
+        border: 0;
+        width: 100%;
+        color: grey;
+        font-weight: bold; }
+      #coffee .coffee-wrapper #intelligentsia span .price {
+        border: 0;
+        width: 100%;
+        color: grey;
+        font-weight: bold; }
+      #coffee .coffee-wrapper #intelligentsia span a {
+        width: 66%;
+        border-style: solid;
+        border-width: 0px;
+        cursor: pointer;
+        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-weight: normal;
+        line-height: normal;
+        margin: 0 0 1.25rem;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        display: inline-block;
+        padding-top: 1rem;
+        padding-right: 2rem;
+        padding-bottom: 1.0625rem;
+        padding-left: 2rem;
+        font-size: 1rem;
+        background-color: #008cba;
+        border-color: #007295;
+        color: white;
+        transition: background-color 300ms ease-out; }
+        #coffee .coffee-wrapper #intelligentsia span a:hover, #coffee .coffee-wrapper #intelligentsia span a:focus {
+          background-color: #007295; }
+        #coffee .coffee-wrapper #intelligentsia span a:hover, #coffee .coffee-wrapper #intelligentsia span a:focus {
+          color: white; }
 
 #kits {
   width: 100%;
@@ -5927,4 +5916,4 @@ footer {
       footer #footer ul li {
         color: white;
         list-style: none;
-        text-align: left; }
+        text-align: center; }

@@ -37,6 +37,19 @@ h3, h4, h5, h6 {
 
 }
 #home{
+	/*background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
+  	video {
+	    position: absolute; 
+	    min-width: 100%;
+	    z-index: -100;
+	    background-size: cover;
+	    overflow: hidden;
+	}
+
 	header{
 		h1{
 			a{
@@ -80,10 +93,10 @@ h3, h4, h5, h6 {
 		}
 	}
 }
-
 #fuel{
-	@include grid-row();
 	background-color: white;
+	.fuel-wrapper{
+		@include grid-row();
 		h3{}
 		span{
 			@include grid-column(4);
@@ -92,36 +105,37 @@ h3, h4, h5, h6 {
 				font-family: 'Lato',sans-serif;
 				font-weight: 100;
 		}
+	}	
 }
 
 #coffee{ 
+	background-color: black;
+	.coffee-wrapper{
 	@include grid-row();
-	#intelligentsia{
-		span{
-			@include grid-column(3);
-			text-align:center;
-			padding: 1em;
-			img{}
-			.name{
-				border:0;
-				width:100%;
-				color:grey;
-				font-weight:bold;
-			}
-			.price{
-				border:0;
-				width:100%;
-				color:grey;
-				font-weight:bold;
+		h3{color: white;}
+		#intelligentsia{
+			span{
+				@include grid-column(3);
+				text-align:center;
+				padding: 1em;
+				img{}
+				.name{
+					border:0;
+					width:100%;
+					color:grey;
+					font-weight:bold;
 				}
-			a{
-				width:66%;
-				@include button
- 			}
- 			a{
-				width:66%;
-				@include button
- 			}
+				.price{
+					border:0;
+					width:100%;
+					color:grey;
+					font-weight:bold;
+					}
+				a{
+					width:66%;
+					@include button
+	 			}
+			}
 		}
 	}
 }
@@ -210,7 +224,7 @@ footer{
 			li{
 				color: white;
 				list-style: none;
-				text-align: left;
+				text-align: center;
 			}
 		}
 	}
