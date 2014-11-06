@@ -5757,7 +5757,7 @@ h3, h4, h5, h6 {
     float: left;
     text-align: center;
     padding: 1em; }
-    #kits #kit-type span .name {
+    #kits #kit-type span h4 {
       border: 0;
       width: 100%;
       color: grey;
