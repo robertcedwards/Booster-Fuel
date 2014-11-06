@@ -27,6 +27,15 @@ h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
+.scroll{
+	text-align: center;
+	a{
+		color: white;
+		font-family: 'entypo',sans-serif;
+		font-size: large;
+	}
+
+}
 #home{
 	/*background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
@@ -81,12 +90,6 @@ h3, h4, h5, h6 {
 					font-weight: 100;
 				}
 		}
-	}
-	div.scroll{
-		a{
-			i{}
-		}
-
 	}
 }
 
@@ -172,7 +175,7 @@ h3, h4, h5, h6 {
 
 #instructions {
 	@include grid-row();
-	span{
+	span.video-content{
 		@include grid-column(4);
 		video.how-to{
 		}
