@@ -14,6 +14,43 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
+            <div class="fixed">
+                <nav class="top-bar" data-topbar role="navigation">
+                      <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">My Site</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><a href="#home">HOME</a></li>
+      <li class="has-dropdown">
+        <a href="#">Cart</a>
+        <ul class="dropdown">
+            <li class="simpleCart_items"></li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#fuel">THE FUEL</a></li>
+                        <li><a href="#coffee">COFFEE</a></li>
+                        <li><a href="#kits">KITS</a></li>
+                        <li><a href="#instructions">INSTRUCTIONS</a></li>
+                        <li><a href="#tools">TOOLS</a></li>
+                        <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+                        <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+                        <a href="javascript:;" class="simpleCart_empty">Empty</a>
+                    </ul>
+                </nav>
+            </div>
     <section id="home">
         <header>
         <!-- Background Video --> 
@@ -29,20 +66,7 @@
                 </a>
             </h1>
             <h2>Fuel for Good.</h2>
-            <nav>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#fuel">THE FUEL</a></li>
-                    <li><a href="#coffee">COFFEE</a></li>
-                    <li><a href="#kits">KITS</a></li>
-                    <li><a href="#instructions">INSTRUCTIONS</a></li>
-                    <li><a href="#tools">TOOLS</a></li>
-                    <div class="simpleCart_items"></div>
-                    <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
-                    <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
-                    <a href="javascript:;" class="simpleCart_empty">Empty</a>
-                </ul>
-            </nav>
+
         </header>
 
         <figure>
@@ -261,6 +285,9 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+
     <script src="js/app.js"></script>
     <script src="js/simpleCart.min.js"></script>
     <script>
@@ -307,5 +334,8 @@
               });
             });
     </script>
+    <script>
+        $(document).foundation();
+    </script>    
 </body>
 </html>

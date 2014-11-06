@@ -5604,10 +5604,10 @@ h3, h4, h5, h6 {
     color: white;
     margin-left: 0.1em; }
   #home header nav {
-    position: absolute;
-    top: 0;
-    right: 100px;
-    margin-top: 20px; }
+    /*position: absolute;
+			top: 0;
+			right: 100px;
+			margin-top: 20px;*/ }
     #home header nav ul {
       margin: 0 auto 1.0625rem auto;
       margin-left: -1.375rem;
