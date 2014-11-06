@@ -5558,8 +5558,10 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif; }
+
 ::-webkit-scrollbar {
   display: none; }
 
@@ -5579,10 +5581,6 @@ h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100; }
-
 #home {
   /*background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
@@ -5591,12 +5589,7 @@ p {
   	background-size: cover;*/ }
   #home video {
     position: absolute;
-    right: 0;
-    bottom: 0;
     min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: 100%;
     z-index: -100;
     background-size: cover; }
   #home header h2 {
@@ -5647,7 +5640,9 @@ p {
       #home figure figcaption h3 {
         color: white; }
       #home figure figcaption p {
-        color: white; }
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 100; }
 
 #fuel {
   background: white; }
@@ -5668,6 +5663,9 @@ p {
       padding-right: 0.9375rem;
       width: 33.33333%;
       float: left; }
+    #fuel #fuel-wrapper p {
+      font-family: 'Lato', sans-serif;
+      font-weight: 100; }
 
 #coffee {
   width: 100%;
@@ -5876,6 +5874,9 @@ p {
     display: table; }
   #good:after {
     clear: both; }
+  #good p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100; }
   #good ul {
     margin: 0 auto 1.0625rem auto;
     margin-left: -1.375rem;
@@ -5903,6 +5904,9 @@ p {
     display: table; }
   #tools:after {
     clear: both; }
+  #tools p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100; }
 
 footer {
   background-color: #222222;

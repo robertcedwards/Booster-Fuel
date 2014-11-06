@@ -1,0 +1,29 @@
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	color: #000000;
+	fill: currentColor;
+}
+.icon-cross {
+	width: 20px;
+	height: 20px;
+}
+.icon-cw {
+	width: 20px;
+	height: 20px;
+}
+.icon-play {
+	width: 20px;
+	height: 20px;
+}
+.icon-pause {
+	width: 20px;
+	height: 20px;
+}
+.icon-stop {
+	width: 20px;
+	height: 20px;
+}
+.icon-arrow-down {
+	width: 20px;
+	height: 20px;
+}
