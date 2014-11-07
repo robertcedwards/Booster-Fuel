@@ -13,44 +13,35 @@
 
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
-<body>
-            <div class="fixed">
-                <nav class="top-bar" data-topbar role="navigation">
-                      <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">My Site</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+<body>               
+    <nav class="top-bar" data-topbar role="navigation">
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
 
   <section class="top-bar-section">
-    <!-- Right Nav Section -->
     <ul class="right">
-      <li><a href="#home">HOME</a></li>
       <li class="has-dropdown">
-        <a href="#">Cart</a>
+        <a href="#">Cart - 
+            <span class="simpleCart_quantity"></span>
+        </a>
         <ul class="dropdown">
             <li class="simpleCart_items"></li>
+            <li>
+                <span class="simpleCart_quantity"></span> - <span class="simpleCart_total"></span>
+                <button href="javascript:;" class="simpleCart_checkout">Checkout</button>
+                <button href="javascript:;" class="simpleCart_empty">Empty</button>
+            </li>
         </ul>
       </li>
     </ul>
-
-
-
-                    <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#fuel">THE FUEL</a></li>
-                        <li><a href="#coffee">COFFEE</a></li>
-                        <li><a href="#kits">KITS</a></li>
-                        <li><a href="#instructions">INSTRUCTIONS</a></li>
-                        <li><a href="#tools">TOOLS</a></li>
-                        <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
-                        <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
-                        <a href="javascript:;" class="simpleCart_empty">Empty</a>
-                    </ul>
-                </nav>
-            </div>
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#fuel">THE FUEL</a></li>
+        <li><a href="#coffee">COFFEE</a></li>
+        <li><a href="#kits">KITS</a></li>
+        <li><a href="#instructions">INSTRUCTIONS</a></li>
+    </ul>
+    </section>
+    </nav>
     <section id="home">
         <header>
         <!-- Background Video --> 
@@ -59,14 +50,13 @@
                 <source src="img/backgrounds/homeBG.mp4" type="video/webm">
                 <img src="" title="Your browser does not support the <video> tag">
             </video>
-           
+
             <h1 class="logo">
                 <a href="#">
                     <img title="Booster Fuel"src="img/logo.png"/>
                 </a>
             </h1>
-            <h2>Fuel for Good.</h2>
-
+            <h2>Fuel for Good.</h2>          
         </header>
 
         <figure>
@@ -112,42 +102,28 @@
         		<span class="simpleCart_shelfItem">
                     <h4 class="item_name name">El Diablo</h4>
                     <img src="img/eldiablo.jpg"/>
-                    <input type="number" value="1" class="item_Quantity">
-
                     <span class="item_price price">$15.00</span>
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-
                     <a class="item_add" href="javascript:;"> Add to Cart </a>
                     <a>Subscribe</a>
-
                 </span>
         		<span class="simpleCart_shelfItem">
                     <h4 class="item_name name">Organic Black Cat</h4>
                     <img src="img/org_bcat_0.jpg"/>
-                    <input type="number" value="1" class="item_Quantity">
                     <span class="item_price price">$15.00</span>
                     <a class="item_add" href="javascript:;"> Add to Cart </a>
-                    <input type="hidden" name="user_id" value="255RLEGMPYNIZSYGOH6I">
-                    <input type="hidden" name="form_id" value="1">                
                     <a>Subscribe</a>
                 </span>
         		<span class="simpleCart_shelfItem">          	
                     <h4 class="item_name name">El Gallo</h4>
                     <img src="img/elgallo.jpg"/>
-                    <input type="number" value="1" class="item_Quantity">
                     <span class="item_price price">$15.00</span>
-                    <input type="hidden" name="user_id" value="255RLEGMPYNIZSYGOH6I">
-                    <input type="hidden" name="form_id" value="1">                
                     <a class="item_add" href="javascript:;"> Add to Cart </a>
                     <a>Subscribe</a>
                 </span>
         		<span class="simpleCart_shelfItem">          	
                     <h4 class="item_name name">Celebration Blend</h4>
-                    <img src="img/celebration.jpg"/>
-                    <input type="number" value="1" class="item_Quantity">
+                    <img src="img/celebration.jpg"/>                    
                     <span class="item_price price">$15.00</span>
-                    <input type="hidden" name="u" value="f496f3374da398149aa0fce9c">                    
-                    <input type="hidden" name="id" value="68eeda5a55">
                     <a class="item_add" href="javascript:;"> Add to Cart </a>                    
                     <a>Subscribe</a>
                 </span>
@@ -158,35 +134,34 @@
                 <span class="entypo-down-open-big"></span>
             </a>
         </div>                
-
     </section>
 <hr/>
     <section id="kits">
     <h3>KITS</h3>
         <div id="kit-type">   
-            <span>
+            <span class="simpleCart_shelfItem">
                 <img src="img/kits/travel.jpg"/>
-                <span class="name">Travel Kit</span>
-                <span class="price">$15.00</span>       
-                <a>Add to Cart</a>
+                <h4 class="item_name name">Travel Kit</h4>
+                <span class="item_price price">$15.00</span>       
+                <a class="item_add" href="javascript:;">Add to Cart</a>
             </span>
-            <span>
+            <span class="simpleCart_shelfItem">
                 <img src="img/kits/pour-over.jpg"/>      
-                <span class="name">Pour Over Kit</span>
-                <span class="price">$15.00</span>               
-                <a>Add to Cart</a>
+                <h4 class="item_name name">Pour Over Kit</h4>
+                <span class="item_price price">$15.00</span>               
+                <a class="item_add" href="javascript:;">Add to Cart</a>
             </span>
-            <span>              
+            <span class="simpleCart_shelfItem">              
                 <img src="img/kits/mugs.jpg"/>
-                <span class="name">Mug Set</span>
-                <span class="price">$15.00</span>                       
-                <a>Add to Cart</a>
+                <h4 class="item_name name">Mug Set</h4>
+                <span class="item_price price">$15.00</span>                       
+                <a class="item_add" href="javascript:;">Add to Cart</a>
             </span>
-            <span>              
+            <span class="simpleCart_shelfItem">              
                 <img src="img/kits/gift-set.jpg"/>
-                <span class="name">Gift Set</span>
-                <span class="price">$15.00</span>                       
-                <a>Add to Cart</a>
+                <h4 class="item_name name">Gift Set</h4>
+                <span class="item_price price">$15.00</span>                       
+                <a class="item_add" href="javascript:;">Add to Cart</a>
             </span>
         </div>
         <div class="scroll">
@@ -247,27 +222,8 @@
             <li>AIDS Walk</li>
             <li>Movember</li>
         </ul>
-        <button>GET INVOLVED</button><!-- (contact Erica to volunteer or nominate charity?)-->
-        <div class="scroll">
-            <a style="color:black;" href="#tools">
-                <span class="entypo-down-open-big"</span>
-            </a>
-        </div>                        
-
+        <button>GET INVOLVED</button>
     </section>
-<hr/>
-    <section id="tools">
-    <h3>MORE TOOLS FOR GOOD</h3>
-
-        <p>Intelligentsia is a Direct Trade company, which means it collaborates directly with farmers to provide sustainable, traceable, and socially responsible products to its consumers.
-        <a href="http://www.intelligentsiacoffee.com/content/direct-trade">Learn More</a>
-        </p>
-
-        <p>Get brewing instructions and more with Intelligentsia’s iPhone app.
-        <a href="http://www.intelligentsiacoffee.com/content/iphone-app">Learn more</a>
-        </p>
-    </section>
-
     <footer>
         <div id="footer">   
             <ul class="links">
@@ -283,40 +239,25 @@
         </div>
     </footer>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
-
+    <script>
+        $(document).foundation();
+    </script> 
     <script src="js/app.js"></script>
     <script src="js/simpleCart.min.js"></script>
     <script>
         simpleCart({
             checkout: { 
             type: "SendForm" , 
-            url: ""  
-            }
-        }); 
-
-        simpleCart({
-    checkout: { 
-        type: "SendForm" , 
-        url: "http://getboosterfuel.us9.list-manage.com/subscribe/post?u=f496f3374da398149aa0fce9c&amp;id=68eeda5a55" ,
-        // http method for form, "POST" or "GET", default is "POST"
-        method: "POST" , 
-        // url to return to on successful checkout, default is null
-        success: "http://robertcedwards.github.io/Booster-Fuel/" , 
-        // url to return to on cancelled checkout, default is null
-        cancel: "http://robertcedwards.github.io/Booster-Fuel/" ,
-        // an option list of extra name/value pairs that can
-        // be sent along with the checkout data
-        extra_data: {
-            name: "mc-embedded-subscribe-form",
-            id: "mc-embedded-subscribe-form"
-
-        }
-    } 
-});
+            url: "https://formkeep.com/f/67f26f1c4ea3" ,
+            method: "POST" , 
+            extra_data: {} ,
+            cartStyle: "div",
+            } 
+        });
     </script>
      <script>
             $(function() {
@@ -334,8 +275,6 @@
               });
             });
     </script>
-    <script>
-        $(document).foundation();
-    </script>    
+   
 </body>
 </html>

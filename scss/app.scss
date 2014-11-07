@@ -13,8 +13,7 @@
 [class*="entypo-"]:before {
     font-family: 'entypo', sans-serif;
 }
-
-h1 {
+ h1 {
 	padding: 0;
 	margin: 0;
 }
@@ -36,6 +35,25 @@ h3, h4, h5, h6 {
 	}
 
 }
+.headerRow{
+	display: none;
+}
+.itemRow {
+	background: white;
+	float: left;
+	margin-left: 1em;
+	padding: .2em;
+}
+.top-bar-section .dropdown li {
+width: 60em;
+height: auto;
+background: white;
+}
+.item_Quantity{width: 33%!important;}
+.item_add{width: 66%;}
+.dropdown{background:white;}
+
+
 #home{
 	/*background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
@@ -59,22 +77,6 @@ h3, h4, h5, h6 {
 		h2{
 			color: white;
 			margin-left: .1em;
-		}
-		nav{
-			/*position: absolute;
-			top: 0;
-			right: 100px;
-			margin-top: 20px;*/
-			ul{
-				@include inline-list;
-				li{
-					a{
-						font-weight: 100;
-						letter-spacing: .4px;
-						color: white;
-					}
-				}
-			}
 		}
 	}
 	figure{
@@ -152,23 +154,19 @@ h3, h4, h5, h6 {
 			img{}
 			h4{
 				border:0;
-				width:100%;
+				@include grid-column(12);
 				color:grey;
 				font-weight:bold;
 			}
-			.price{
+			span{
 				border:0;
-				width:100%;
+				@include grid-column(12);
 				color:grey;
 				font-weight:bold;
 				}
 			a{
 				width:66%;
-				@include button
- 			}
- 			a{
-				width:66%;
-				@include button
+				@include button;
  			}
 		}
 	}
@@ -202,16 +200,6 @@ h3, h4, h5, h6 {
 		li{}
 	}
 	button{}
-}
-
-#tools{
-	@include grid-row();
-	h3{}
-	p{
-		font-family: 'Lato',sans-serif;
-		font-weight: 100;
-		a{}
-	}
 }
 
 footer{

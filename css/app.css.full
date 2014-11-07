@@ -5588,6 +5588,29 @@ h3, h4, h5, h6 {
     font-family: 'entypo', sans-serif;
     font-size: large; }
 
+.headerRow {
+  display: none; }
+
+.itemRow {
+  background: white;
+  float: left;
+  margin-left: 1em;
+  padding: 0.2em; }
+
+.top-bar-section .dropdown li {
+  width: 60em;
+  height: auto;
+  background: white; }
+
+.item_Quantity {
+  width: 33% !important; }
+
+.item_add {
+  width: 66%; }
+
+.dropdown {
+  background: white; }
+
 #home {
   /*background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
@@ -5603,29 +5626,6 @@ h3, h4, h5, h6 {
   #home header h2 {
     color: white;
     margin-left: 0.1em; }
-  #home header nav {
-    /*position: absolute;
-			top: 0;
-			right: 100px;
-			margin-top: 20px;*/ }
-    #home header nav ul {
-      margin: 0 auto 1.0625rem auto;
-      margin-left: -1.375rem;
-      margin-right: 0;
-      padding: 0;
-      list-style: none;
-      overflow: hidden; }
-      #home header nav ul > li {
-        list-style: none;
-        float: left;
-        margin-left: 1.375rem;
-        display: block; }
-        #home header nav ul > li > * {
-          display: block; }
-      #home header nav ul li a {
-        font-weight: 100;
-        letter-spacing: 0.4px;
-        color: white; }
   #home figure {
     width: 100%;
     margin-left: auto;
@@ -5759,42 +5759,20 @@ h3, h4, h5, h6 {
     padding: 1em; }
     #kits #kit-type span h4 {
       border: 0;
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
       width: 100%;
+      float: left;
       color: grey;
       font-weight: bold; }
-    #kits #kit-type span .price {
+    #kits #kit-type span span {
       border: 0;
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
       width: 100%;
+      float: left;
       color: grey;
       font-weight: bold; }
-    #kits #kit-type span a {
-      width: 66%;
-      border-style: solid;
-      border-width: 0px;
-      cursor: pointer;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-weight: normal;
-      line-height: normal;
-      margin: 0 0 1.25rem;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
-      display: inline-block;
-      padding-top: 1rem;
-      padding-right: 2rem;
-      padding-bottom: 1.0625rem;
-      padding-left: 2rem;
-      font-size: 1rem;
-      background-color: #008cba;
-      border-color: #007295;
-      color: white;
-      transition: background-color 300ms ease-out; }
-      #kits #kit-type span a:hover, #kits #kit-type span a:focus {
-        background-color: #007295; }
-      #kits #kit-type span a:hover, #kits #kit-type span a:focus {
-        color: white; }
     #kits #kit-type span a {
       width: 66%;
       border-style: solid;
@@ -5876,22 +5854,6 @@ h3, h4, h5, h6 {
       display: block; }
       #good ul > li > * {
         display: block; }
-
-#tools {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem; }
-  #tools:before, #tools:after {
-    content: " ";
-    display: table; }
-  #tools:after {
-    clear: both; }
-  #tools p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 100; }
 
 footer {
   background-color: #222222;
