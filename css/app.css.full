@@ -5600,7 +5600,8 @@ h3, h4, h5, h6 {
 .top-bar-section .dropdown li {
   width: 60em;
   height: auto;
-  background: white; }
+  background: white;
+  padding: 0.8em; }
 
 .item_Quantity {
   width: 33% !important; }
