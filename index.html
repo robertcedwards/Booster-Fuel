@@ -21,20 +21,26 @@
   <section class="top-bar-section">
     <ul class="right">
       <li class="has-dropdown">
-        <a href="#">Cart - 
+        <a href="#"><span class="entypo-basket"></span> Cart - 
             <span class="simpleCart_quantity"></span>
         </a>
         <ul class="dropdown">
             <li class="simpleCart_items"></li>
+
             <li>
-                <span class="simpleCart_quantity"></span> - <span class="simpleCart_total"></span>
-                <button href="javascript:;" class="simpleCart_checkout">Checkout</button>
-                <button href="javascript:;" class="simpleCart_empty">Empty</button>
-            </li>
-            <li>
-                <input type="email" name="email" placeholder="Your Email">
-                <input type="text" name="name" placeholder="Your Name">
-                <input type="url" name="url" placeholder="Your Website">
+                <h5>Your info:</h5>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <small class="error">Email address, please.</small>                
+                <input type="text" name="name" placeholder="Your Name" required>
+                <small class="error">We'll need your name too.</small>                
+                <hr/>
+                <span>Total:                
+                    <p class="simpleCart_total"></p>
+                </span>
+                <button type="submit" href="javascript:;" class="simpleCart_checkout"><span class="entypo-check"></span> Checkout</button>
+                <button href="javascript:;" class="simpleCart_empty"><span class="entypo-cancel"></span> Empty</button> 
+                <hr/>                
+                <p>Your coffee will be availble everyday Thursday for pick-up.</p>
             </li>
         </ul>
       </li>
@@ -77,7 +83,7 @@
 
         <div class="scroll">
             <a href="#fuel">
-                <span class="entypo-down-open-big"</span>
+                <span class="entypo-down-open-big"></span>
             </a>
         </div>
     </section>
@@ -252,6 +258,8 @@
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.abide.js"></script>
+    
     <script>
             jQuery(document).foundation();
     </script>
@@ -264,7 +272,7 @@
             url: "https://formkeep.com/f/67f26f1c4ea3" ,
             method: "POST" , 
             extra_data: {} ,
-            cartStyle: "div",
+            cartStyle: "div"
             } 
         });
     </script>
