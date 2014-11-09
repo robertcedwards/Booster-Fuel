@@ -5613,11 +5613,11 @@ h3, h4, h5, h6 {
   background: white; }
 
 #home {
-  /*background: url(../img/backgrounds/home-bg.jpg) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;*/ }
+  background: url(../img/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   #home video {
     position: absolute;
     min-width: 100%;
