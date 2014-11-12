@@ -5685,67 +5685,63 @@ p, span {
       font-family: 'Lato', sans-serif;
       font-weight: 100; }
 
-#coffee {
-  background-color: black; }
-  #coffee .coffee-wrapper {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 62.5rem; }
-    #coffee .coffee-wrapper:before, #coffee .coffee-wrapper:after {
-      content: " ";
-      display: table; }
-    #coffee .coffee-wrapper:after {
-      clear: both; }
-    #coffee .coffee-wrapper h3 {
-      color: white; }
-    #coffee .coffee-wrapper #intelligentsia span {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 25%;
-      float: left;
+#coffee .coffee-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem; }
+  #coffee .coffee-wrapper:before, #coffee .coffee-wrapper:after {
+    content: " ";
+    display: table; }
+  #coffee .coffee-wrapper:after {
+    clear: both; }
+  #coffee .coffee-wrapper #intelligentsia span {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 1em; }
+    #coffee .coffee-wrapper #intelligentsia span .name {
+      border: 0;
+      width: 100%;
+      color: grey;
+      font-weight: bold; }
+    #coffee .coffee-wrapper #intelligentsia span .price {
+      border: 0;
+      width: 100%;
+      color: grey;
+      font-weight: bold; }
+    #coffee .coffee-wrapper #intelligentsia span a {
+      width: 66%;
+      border-style: solid;
+      border-width: 0px;
+      cursor: pointer;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-weight: normal;
+      line-height: normal;
+      margin: 0 0 1.25rem;
+      position: relative;
+      text-decoration: none;
       text-align: center;
-      padding: 1em; }
-      #coffee .coffee-wrapper #intelligentsia span .name {
-        border: 0;
-        width: 100%;
-        color: grey;
-        font-weight: bold; }
-      #coffee .coffee-wrapper #intelligentsia span .price {
-        border: 0;
-        width: 100%;
-        color: grey;
-        font-weight: bold; }
-      #coffee .coffee-wrapper #intelligentsia span a {
-        width: 66%;
-        border-style: solid;
-        border-width: 0px;
-        cursor: pointer;
-        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-        font-weight: normal;
-        line-height: normal;
-        margin: 0 0 1.25rem;
-        position: relative;
-        text-decoration: none;
-        text-align: center;
-        -webkit-appearance: none;
-        -webkit-border-radius: 0;
-        display: inline-block;
-        padding-top: 1rem;
-        padding-right: 2rem;
-        padding-bottom: 1.0625rem;
-        padding-left: 2rem;
-        font-size: 1rem;
-        background-color: #008cba;
-        border-color: #007295;
-        color: white;
-        transition: background-color 300ms ease-out; }
-        #coffee .coffee-wrapper #intelligentsia span a:hover, #coffee .coffee-wrapper #intelligentsia span a:focus {
-          background-color: #007295; }
-        #coffee .coffee-wrapper #intelligentsia span a:hover, #coffee .coffee-wrapper #intelligentsia span a:focus {
-          color: white; }
+      -webkit-appearance: none;
+      -webkit-border-radius: 0;
+      display: inline-block;
+      padding-top: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 1.0625rem;
+      padding-left: 2rem;
+      font-size: 1rem;
+      background-color: #008cba;
+      border-color: #007295;
+      color: white;
+      transition: background-color 300ms ease-out; }
+      #coffee .coffee-wrapper #intelligentsia span a:hover, #coffee .coffee-wrapper #intelligentsia span a:focus {
+        background-color: #007295; }
+      #coffee .coffee-wrapper #intelligentsia span a:hover, #coffee .coffee-wrapper #intelligentsia span a:focus {
+        color: white; }
 
 #kits {
   width: 100%;

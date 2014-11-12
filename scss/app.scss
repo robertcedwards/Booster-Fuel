@@ -121,10 +121,9 @@ padding: .8em;
 }
 
 #coffee{ 
-	background-color: black;
 	.coffee-wrapper{
 	@include grid-row();
-		h3{color: white;}
+		h3{}
 		#intelligentsia{
 			span{
 				@include grid-column(3);
