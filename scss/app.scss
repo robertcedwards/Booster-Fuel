@@ -65,13 +65,13 @@ padding: .8em;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	video {
+  	/*video {
 	    position: absolute; 
 	    min-width: 100%;
 	    z-index: -100;
 	    background-size: cover;
 	    overflow: hidden;
-	}
+	}*/
 
 	header{
 		h1{
@@ -107,11 +107,15 @@ padding: .8em;
 		@include grid-row();
 		h3{}
 		span{
-			@include grid-column(4);
-			img{}
+			@include grid-column(12);
+			img{
+				float:left;
+				padding-right:1.3em;
+			}
 		}	p{
 				font-family: 'Lato',sans-serif;
 				font-weight: 100;
+
 		}
 	}	
 }

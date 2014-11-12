@@ -5621,13 +5621,14 @@ p, span {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-  #home video {
-    position: absolute;
-    min-width: 100%;
-    z-index: -100;
-    background-size: cover;
-    overflow: hidden; }
+  background-size: cover;
+  /*video {
+	    position: absolute; 
+	    min-width: 100%;
+	    z-index: -100;
+	    background-size: cover;
+	    overflow: hidden;
+	}*/ }
   #home header h2 {
     color: white;
     margin-left: 0.1em; }
@@ -5675,8 +5676,11 @@ p, span {
     #fuel .fuel-wrapper span {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
-      width: 33.33333%;
+      width: 100%;
       float: left; }
+      #fuel .fuel-wrapper span img {
+        float: left;
+        padding-right: 1.3em; }
     #fuel .fuel-wrapper p {
       font-family: 'Lato', sans-serif;
       font-weight: 100; }
